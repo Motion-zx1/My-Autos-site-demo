@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="'UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MOTION | 2026 | SHOW ROOM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <img src="Pictures/aston-martin-vanquish-pic1.webp" alt="aston martin vanquish">
+</head>
+<body>
+    <div class="main">
+         <header class="page-header">
+        <div class="page-header-inner">
+           <h2 class="logo">父 • MOTION</h2>
+           <p class="page-tagline">Private Showroom Experience</p>
+        </div>
+    </header>
+        <div class="navbar">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">SHOW ROOM</a></li>
+                    <li><a href="#">DESIGN</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class ="srch" type="search" id="site-search" name="q" placeholder="Search">
+                <button class="btn">Enter</button>
+            </div>
+
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="text-section">
+                <h1><span>2026</span> <br> Show Room</h1>
+                <p class="para">Experience the future of automotive excellence at our 2026 Show Room. 
+                    Discover cutting-edge designs, innovative technology, and unparalleled performance in a sleek and modern setting. 
+                    Join us as we unveil the next generation of vehicles that redefine luxury and driving pleasure.</p>
+                    <a href="showroom.html" class="cn">Explore More →</a>
+            </div>
+
+            <div class="form">
+                <h2>Sign Up for Updates</h2>
+                <label for="name" class="sr-only">name</label>
+                <input name="name" id="name" autocomplete="given-name" type="text" placeholder="Enter your name">
+                <label for="email" class="sr-only">email</label>
+                <input name="email" id="email" autocomplete="email" type="email" placeholder="Enter your email">
+                <a href="#" class="btnn">Submit</a>
+            
+
+              <div class="icons">
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        // select hambuger and menu
+        const hamburger = document.querySelector('.hamburger');
+        const menu = document.querySelector('.menu ul');
+
+        //Toggle menu when hamburger is clicked
+        hamburger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            menu.classList.toggle('active');
+        });
+
+        //Prevent menu from closing when clicking inside menu
+        menu.addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+
+        //close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!menu.contains(e.target) && !hamburger.contains(e.target)) {
+            menu.classList.remove('active');
+        }
+        });
+
+        //close menu when a link is clicked
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('active');
+            });
+        });
+
+    </script>
+</body>
+</html>

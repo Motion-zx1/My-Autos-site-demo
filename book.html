@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="'UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTION | BOOK EXPERIENCE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body class="book-page">
+    <button class="back-btn" onclick="history.back()" >← Back</button>
+    <header class="page-header">
+        <div class="page-header-inner">
+           <h2 class="logo">父 • MOTION</h2>
+           <p class="page-tagline">Private Showroom Experience</p>
+        </div>
+    </header>
+    <main class="book-main">
+        <section class="book-card">
+
+            <h1 class="book-title">Book Private Experience</h1>
+            <p class="book-subtitle">Schedule a personalized Motion showroom visit</p>
+
+            <form id="bookform" class="book-form">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Name" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="example@gmail.com" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="model">Preferred Model</label>
+                    <select id="model">
+                        <option value="">Select a model</option>
+                        <option>Motion XLR</option>
+                        <option>Model</option>
+                        <option>Concept</option>
+                        <option>Limited</option>
+                        <option>Not sure Yet</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Preferred Date</label>
+                    <input type="date" id="date" />
+                </div>
+
+                <button type="submit" class="btn-primary">
+                    Request Experience
+                </button>
+
+                <p id="formmessage" class="form-success" ></p>
+            </form>
+
+            <p class="book-note">
+                This is a demo experience request. No actual booking is performed 😂.
+            </p>
+        </section>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("bookform");
+        const message = document.getElementById("formmessage")
+
+        if (!form || !message) return;
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            message.textContent = 
+            "Thank you! Our Team will contact you shorty"
+
+            message.classList.add("show");
+
+            form.reset()
+        })
+    })
+    </script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="'UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SHOWROOM | 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <div class="main showroom-page">
+         <header class="page-header">
+        <div class="page-header-inner">
+           <h2 class="logo">父 • MOTION</h2>
+           <p class="page-tagline">Private Showroom Experience</p>
+        </div>
+    </header>
+        <section id="top" class="showroom-hero">
+            <div class="showroom-content">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>Show Room</span>
+                </div>
+                <h1>2026 Hyper&Super Cars Lineup</h1>
+                <p class="subtitle">Precision. Power. Presence.</p>
+            </div>
+        </section>
+
+        <section class="filter-bar">
+            <button class="filter"><a href="#top">All</a></button>
+            <button class="filter"><a href="#featured">Hyper</a></button>
+            <button class="filter"><a href="#cards">Featured Cars</a></button>
+            <button class="filter"><a href="#preview">Model Preview</a></button>
+            <button class="filter"><a href="#about">About</a></button>
+        </section>
+
+        <section id="featured" class="featured-cars">
+            <div class="featured-wrapper">
+                <div class="featured-image" style="--img:url('BUGATTI-World-Premiere-Presskit-Images-01-1.jpg')"></div>
+                <div class="featured-info">
+                    <h2>Motion XLR Hypercar</h2>
+                    <p>A marvel of engineering with cutting-edge performance and futuristic design.</p>
+                    <ul>
+                        <li>1500 hp</li>
+                        <li>0-100 km/h: 2.1s</li>
+                        <li>Top Speed: 350 km/h</li>
+                    </ul>
+                    <div class="car-actions">
+                        <button class="btn-secondary" onclick="openPanel()" >View Details</button>
+                        <button class="btn-primary"><a href="book.html">Book Experience</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cards" class="section-tag">Featured Cars</section>
+
+        <section  class="car-grid">
+            <div class="grid">
+                <div class="car-card" style="--img:url('Ferrari-SF90-XX-Spider-pic1.jpg')">
+                    <div class="car-image"></div>
+
+                    <div class="car-info">
+                        <h4 class="car-name">Motion XLR</h4>
+
+                        <p class="car-specs">
+                            1200 hp | 0-100 km/h: 2.5s | Top Speed: 320 km/h
+                        </p>
+
+                        <div class="card-actions">
+                            <button class="btn-secondary" onclick="openPanel()">View Details</button>
+                            <button class="btn-primary"><a href="book.html">Book Experience</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card" style="--img:url('koenigsegg-gemera pic1.jpg')">
+                     <div class="car-image"></div>
+
+                    <div class="car-info">
+                        <h4 class="car-name">Motion XLR</h4>
+
+                        <p class="car-specs">
+                            1200 hp | 0-100 km/h: 2.5s | Top Speed: 320 km/h
+                        </p>
+
+                        <div class="card-actions">
+                            <button class="btn-secondary" onclick="openPanel()">View Details</button>
+                            <button class="btn-primary"><a href="book.html">Book Experience</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card" style="--img:url('McLaren-Artura-pic1.jpg')">
+                     <div class="car-image"></div>
+
+                    <div class="car-info">
+                        <h4 class="car-name">Motion XLR</h4>
+
+                        <p class="car-specs">
+                            1200 hp | 0-100 km/h: 2.5s | Top Speed: 320 km/h
+                        </p>
+
+                        <div class="card-actions">
+                            <button class="btn-secondary" onclick="openPanel()">View Details</button>
+                            <button class="btn-primary"><a href="book.html">Book Experience</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card" style="--img:url('Lamborghini-urus-SE-pic1.jpg')">
+                     <div class="car-image"></div>
+
+                    <div class="car-info">
+                        <h4 class="car-name">Motion XLR</h4>
+
+                        <p class="car-specs">
+                            1200 hp | 0-100 km/h: 2.5s | Top Speed: 320 km/h
+                        </p>
+
+                        <div class="card-actions">
+                            <button class="btn-secondary" onclick="openPanel()">View Details</button>
+                            <button class="btn-primary"><a href="book.html">Book Experience</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card" style="--img:url('aston-martin-vanquish-pic1.webp')">
+                     <div class="car-image"></div>
+
+                    <div class="car-info">
+                        <h4 class="car-name">Motion XLR</h4>
+
+                        <p class="car-specs">
+                            1200 hp | 0-100 km/h: 2.5s | Top Speed: 320 km/h
+                        </p>
+
+                        <div class="card-actions">
+                            <button class="btn-secondary" onclick="openPanel()">View Details</button>
+                            <button class="btn-primary"><a href="book.html">Book Experience</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card" style="--img:url('Porsche-Panamera-pic1.webp')">
+                     <div class="car-image"></div>
+
+                    <div class="car-info">
+                        <h4 class="car-name">Motion XLR</h4>
+
+                        <p class="car-specs">
+                            1200 hp | 0-100 km/h: 2.5s | Top Speed: 320 km/h
+                        </p>
+
+                        <div class="card-actions">
+                            <button class="btn-secondary" onclick="openPanel()">View Details</button>
+                            <button class="btn-primary"><a href="book.html">Book Experience</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="preview" class="section-tag">Model Preview</section>
+
+        <section  class="model-preview">
+            <div class="preview-wrapper">
+
+                <div class="preview-image" style="--img:url('bugatti-tourbillon1.avif')"></div>
+                <div class="preview-info">
+                    <h3>Motion XLR</h3>
+                    <p>Precision-crafted interiors meet intelligent performance systems.</p>
+
+                 <div class="model-stats">
+                    <div>
+                        <li><strong>1500 hp</strong>
+                        <span>Power</span></li>
+                    </div>
+
+                    <div>
+                        <li><strong>2.1s</strong>
+                        <span>0-100 km/h</span></li>
+                    </div>
+
+                    <div>
+                        <li><strong>350km/h</strong>
+                        <span>Top Speed</span></li>
+                    </div>
+                 </div>
+
+                 <div class="model-actions">
+                    <button class="btn-primary"><a href="book.html">Book Experience</a></button>
+                    <button class="btn-secondary">Explore Model</button>
+                 </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="experience">
+            <h3>Experience Motion in Person</h3>
+            <p>Book a Private showroom tour and discover the future.</p>
+            <button class="btn-primary"><a href="book.html">Book Now</a></button>
+        </section>
+
+        <footer id="about" class="site-footer">
+            <div class="footer-wrapper">
+                <div class="footer-brand">
+                    <h3>Motion</h3>
+                    <p>Precision. Power. Presence. The future of automotive excellence.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="showroom.html">Showroom</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Experience</h4>
+                    <ul>
+                        <li><a href="book.html">Book a visit</a></li>
+                        <li><a href="#">Test Drive</a></li>
+                        <li><a href="#">Limited Editions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@motion.com | Phone: +000 000 000</p>
+                </div>
+
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Motion. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <div  class="car-panel" id="detailsPanel">
+        <div class="panel" onclick="event.stopPropagation()">
+            <button class="panel-close" onclick="closePanel()">x</button>
+            <h3>Car Details</h3>
+            <p>More information about the selected car will be displayed here.</p>
+            <button class="btn-primary"><a href="book.html">Book Experience</a></button>
+        </div>
+    </div>
+    <script>
+        //view details pop up button js
+        function openPanel() {
+            document.getElementById('detailsPanel').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+         //close panel when X is clicked
+        function closePanel() {
+            document.getElementById('detailsPanel').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+         //close panel on scroll
+        //window.addEventListener('scroll', closePanel);
+
+        //close panel when another panel is clicked
+        //function openPanel() {
+           // closePanel();
+           // document.getElementById('detailsPanel').classList.add('active');
+        //}
+    </script>
+</body>
+</html>
